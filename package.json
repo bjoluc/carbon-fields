@@ -8,8 +8,8 @@
   "scripts": {
     "start": "npm run development -- --watch",
     "build": "npm run development && npm run production",
-    "development": "cross-env NODE_ENV=development webpack --mode development",
-    "production": "cross-env NODE_ENV=production webpack --mode production"
+    "development": "cross-env NODE_ENV=development NODE_OPTIONS=--openssl-legacy-provider webpack --mode development",
+    "production": "cross-env NODE_ENV=production NODE_OPTIONS=--openssl-legacy-provider webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -48,11 +48,11 @@
     "husky": "^7.0.1",
     "lint-staged": "^8.1.0",
     "mini-css-extract-plugin": "^0.4.4",
-    "node-sass": "^4.13.1",
+    "sass": "^1.57.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.2.0",
-    "sass-loader": "^7.1.0",
+    "sass-loader": "^10.1.0",
     "sass-resources-loader": "^2.0.0",
     "terser-webpack-plugin": "^1.1.0",
     "webpack": "^4.27.1",
@@ -80,6 +80,7 @@
     "callbag-of": "^1.0.1",
     "callbag-start-with": "^3.1.0",
     "callbag-take-until": "^3.0.0",
+    "caniuse-lite": "^1.0.30001439",
     "classnames": "^2.2.6",
     "immer": "^9.0.6",
     "lodash": "^4.17.21",

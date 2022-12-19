@@ -31,3 +31,5 @@ composer.lock
 /assets/dist/
 /build
 carbon-fields.zip
+
+devsetup/
